@@ -1,0 +1,15 @@
+card:
+    ID string
+    ParentListID string
+    name string
+    DateLastActivity
+
+list:
+    ID string
+    name string
+
+board:
+    GetCards() []card, err
+    GetLists []list, err
+    UpdateCard(card) err
+    NewCard(card) err
